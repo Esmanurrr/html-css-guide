@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 600px;
+        background-color: #ccc;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+    }
+    .item{
+        min-height: 100px;
+        width: 200px;
+        background-color: #4e85eb;
+        border: 1px solid black;
+        margin: 10px;
+        
+
+    }
+    .item1{
+        flex-grow: 0;
+        align-self: flex-start;
+    }
+    .item2{
+        flex-grow: 0;
+        /*flex-basis: 0; item1 i görmezden gelerek item2 ve item3ün büyüklüğünü ayarla*/
+        align-self: flex-end;
+    }
+    .item3{
+        /*flex-basis:0;*/
+        flex-shrink: 3;
+        align-self: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+    </div>
+</body>
+</html>

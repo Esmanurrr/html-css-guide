@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS';
+    line-height: 1.5;
+}
+
+.header{
+    background-color: #009E60;
+    color:aliceblue;
+    padding: 1rem;
+
+}
+
+.header-title{
+    text-align: center;
+    margin: 0;
+}
+
+.section{
+    padding: 1rem 2rem;
+}
+
+.section-projeler li{
+    color: rgb(171, 168, 168);
+    margin-bottom: 1rem;
+}
+
+.section-projeler li:last-child{
+    margin:0;
+}
+
+.section-content, .section-projeler{
+    padding: 1rem;
+    list-style: none;
+}
+
+.section-accent{
+    background-color: #009E60;
+    color: aliceblue;
+    
+}
+
+.section-accent h2{
+    margin:0;
+}
+
+.input{
+    border: 1px solid #ccc;
+    border-radius: .25rem;
+    border-color: #009E60;
+    cursor: pointer;
+    resize: none;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+.input:hover, .input:focus{
+    box-shadow: 0 0 5px 0 #009E60;
+    border-color: #009E60;
+    outline: none;
+}
+
+.footer{
+    background-color: #009E60;
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.btn{
+    background-color: #009E60;
+    border: 1px solid #009E60;
+    border-radius: .4rem;
+    padding: .5rem;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.btn:focus,.btn:hover{
+    box-shadow: 0 0 5px 0 #009E60;
+    border-color: #009E60;
+    outline: none;
+}

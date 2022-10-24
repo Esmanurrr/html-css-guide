@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.top-bar{
+    display: flex;
+    background-color: #d0cdcd;
+    color: #e679db;
+    align-items: center;
+    padding: .5rem;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    margin: .5rem;
+    flex-grow:3 ;
+  
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+  
+}
+
+.menu li{
+    flex-grow: 1;
+}
+
+span{
+    font-size: 2rem;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.banner{
+    background-image:url('https://picsum.photos/1024/1024');
+    background-size: cover;
+}
+
+.banner-text{
+    padding: 10% 0;
+
+}
+
+.banner-text-item{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.banner-text-item h2{
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+   color: #e679db;
+
+}
+
+.banner-text-item p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #e679db;
+}
+
+.main-content{
+    display: flex;
+    padding: 2% 0;
+    flex-wrap: wrap;
+    flex-direction: row;  
+}
+.main-item{
+    text-align: center;
+    flex: 1;
+    padding:2%;
+    flex-basis: 0;
+    
+}
+
+.main-item h2{
+    color: #e679db;
+}
+
+.form-container{
+    background:url('https://picsum.photos/1020/1020')
+    no-repeat;
+    background-size: cover;
+}
+
+.form-container h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    color: #e679db;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+.form input, .form textarea{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: 1px solid #e679db ;
+    width: 90%;
+}
+
+.form button{
+    background-color: #e679db;
+    padding: 1rem;
+    border: 1px solid #e679db;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    width: 50%;
+}
+
+.form button:hover{
+    background-color: #9a0f8c;
+    border: 1px solid #9a0f8c;
+    box-shadow: 0 0 5px 0 #9a0f8c;
+    cursor: pointer;
+    color: aliceblue;
+    
+}
+
+@media all and (max-width: 600px){
+    .top-bar{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu{
+        flex-direction: column;
+        margin-top: 1rem;
+
+    } 
+
+    .menu li{
+        padding: 5px;
+    }
+    .main-content{
+        padding: 2% 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 2%; 
+    }
+}
